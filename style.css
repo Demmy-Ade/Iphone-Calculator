@@ -6,7 +6,7 @@ background-color: black;
 padding: 40px 10px 40px 10px;
 max-width: 500px;   
 margin: auto;
-
+}
 .time{
 border: 1px solid black;
 padding: 5px 25px 5px 25px;
@@ -56,10 +56,30 @@ padding: 20px 0;
 
 
 
-@media only screen and (max-width: 400px) {
+
+@media(max-width:767px) {
     .content {
-        padding: 20px;
+        padding: 20px 10px;
     }
 
-    
-}}
+    .value{
+        padding: 10px;
+    }
+    #screen{
+        width: 95%;
+        margin: auto;
+    }
+    .cac{
+        font-size: 15px;
+        font-weight: 900;
+        padding: 15px 0;
+        border-radius: 50% !important;
+    }
+    .ca{
+        font-size: 15px;
+        font-weight: 900;
+        padding: 18px;
+        border-radius: 50% !important;
+    }
+}
+
