@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   
+    <div class="content">
+        <div class="time">
+            <input type="text" id="day">
+        </div>
+<form name="form1">
+  
+        <div class="screen">
+            <input name="screen" class= "screen" type="text" 
+            id="screen">
+
+        </div>
+    </form>
+        <div class="value">
+            <div class="e">
+            
+                <input type="button" id="del" class="ca" onclick="backspace()" value="Del">
+
+                <input class="ca"
+                onclick="document.getElementById('screen').value = ''";
+                type="button" value="AC">
+            </div>
+
+            <div class="a">
+            <input class="cac"
+            onclick="document.getElementById('screen').value += 7" type="button" value="7">
+            <input   class="cac" type="button" 
+            onclick="document.getElementById('screen').value += 8;"
+         value="8">
+            <input  class="cac"
+            onclick="document.getElementById('screen').value += 9;"
+            type="button" value="9">
+            <input  class="cac"
+            style="background-color: gold;
+            color: white;"
+            onclick="document.getElementById('screen').value += '*'"
+            type="button" value="*">
+            </div>
+            <div class="b">
+            <input  class="cac"
+            onclick="document.getElementById('screen').value += 4;"
+            type="button" value="4">
+            <input  class="cac"
+            onclick="document.getElementById('screen').value += 5;"
+            type="button" value="5">
+            <input  class="cac"
+            onclick="document.getElementById('screen').value += 6;"
+            type="button" value="6">
+            <input  class="cac"
+              style="background-color: gold;
+              color: white;" 
+            onclick="document.getElementById('screen').value += '-'"
+            type= "button" value="-">
+            </div>
+            <div class="c">
+            <input  class="cac"
+            onclick="document.getElementById('screen').value += 1;"
+            type="button" value="1">
+            <input  class="cac"
+            onclick="document.getElementById('screen').value += 2;"type="button" value="2">
+            <input  class="cac"
+            onclick="document.getElementById('screen').value += 3;"
+            type="button" value="3">
+            <input  class="cac"
+            style="background-color: gold;
+            color: white;"
+            onclick="document.getElementById('screen').value += '+'"
+            type="button" value="+">
+            </div>
+            <div class="d">
+            <input  class="cac"
+            onclick="document.getElementById('screen').value += 0;"
+            type="button" value="0">
+            <input  class="cac"
+            
+    
+            onclick="document.getElementById('screen').value += '.'"
+            type="button" value=".">
+            <input  class="cac"
+            
+            onclick="document.getElementById('screen').value += '/'"
+            type="button" value="/">
+            <input  class="cac"
+            style="background-color: gold;
+            color: white;
+              border-radius: 20px;"
+              onclick="calculate()"
+            type="button"  id="san" value="=">
+        
+            </div>
+            </div>
+             
+    </div>
+</body>
+</html>
+<script>
+
+
+function calculate(){
+    var expression = document.getElementById('screen').value;
+    var result = eval(expression);
+    document.getElementById('screen').value = result;}
+
+// }
+// var input=document.getElementById('joy');
+// var current = input.value;
+// input.value = current.substring(0, current.length - 1);
+
+
+function backspace()
+  { 
+     var exp = document.form1.screen.value;
+    document.form1.screen.value = exp.substring(0, exp.lenght - 1);
+  }
+  function updateTime() {
+    var currentTime = new Date().toLocaleTimeString();
+    document.getElementById('day').value = currentTime;
+}
+
+setInterval(updateTime, 1000); // Update time every second
+
+function backspace() { 
+    var exp = document.form1.screen.value;
+    document.form1.screen.value = exp.substring(0, exp.length - 1);
+}
+
+
+</script>

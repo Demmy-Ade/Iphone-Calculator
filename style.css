@@ -1,0 +1,65 @@
+
+.content{
+border:1px solid black;
+    margin: 50px 50px 50px 50px;
+background-color: black;
+padding: 40px 10px 40px 10px;
+max-width: 500px;   
+margin: auto;
+
+.time{
+border: 1px solid black;
+padding: 5px 25px 5px 25px;
+    position: relative;
+    float:right
+}
+.value{
+    border: 1px solid black;
+align-items: center;
+ padding: 40px 40px 40px 40px;
+}
+.value .a{
+
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+}
+.value .b{
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+}
+
+.value .c{
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+}
+
+.value .d{
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+
+} 
+ 
+#screen{
+    width: 90%;
+    padding: 5px;
+    margin: 15px;
+    height: 45px;
+}
+.cac{
+border-radius: 40%; 
+padding: 20px 0;
+}
+.ca{
+    padding: 20px 20px 20px 20px; 
+    border-radius: 20%;    
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .content {
+        padding: 20px;
+    }
+
+    
+}}
